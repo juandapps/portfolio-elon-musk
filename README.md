@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Elon Musk Portfolio
 
 > Understand how to parse a Figma design to create a UI.
 >

@@ -24,6 +24,7 @@
   --clr-top: #3c3a39;
   --clr-sep: #212121;
   --clr-hr: #6f6c6b;
+  --clr-card-badge: #8993a4;
 }
 
 body {
@@ -31,7 +32,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 1.2rem;
+  /* overflow-x: hidden; */
 }
+
+/* HERO SECTION */
 
 header {
   background: url(/img/mobile-version/Frame-Header.svg) no-repeat;
@@ -58,7 +62,7 @@ nav {
 .hamburger {
   background: none;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 0.5rem;
   color: white;
 }
@@ -98,4 +102,135 @@ nav {
   color: white;
   font-family: 'poppins', sans-serif;
   padding-top: 0.8rem;
+}
+
+/* WORKS SECTION */
+.divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.divider hr {
+  margin-top: 1.5rem;
+  background-color: var(--clr-sep);
+  width: 327px;
+  height: 2px;
+  border-radius: 4px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.card {
+  width: 375px;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+}
+
+.card h2 {
+  margin-top: -1.2rem;
+}
+
+.card-text p:nth-child(2) {
+  padding-top: 0.6rem;
+}
+
+.badge {
+  display: flex;
+  padding-top: 1.2rem;
+  gap: 12px;
+}
+
+.card-badge {
+  border: solid 1.7px var(--clr-card-badge);
+  padding: 9.5px;
+  color: black;
+}
+
+.card-btn {
+  margin-top: 1.1rem;
+  font-weight: bold;
+  background: var(--clr-btn);
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--clr-secondary);
+  padding: 1rem;
+  border: none;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 386px;
+  padding-top: 0.5rem;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 4rem;
+  background: url(/img/mobile-version/works/printing-data-correct.svg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.card2-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  color: var(--clr-secondary);
+  margin-top: 2.7rem;
+  margin-left: 1rem;
+  width: 95%;
+}
+
+.card2-text h2 {
+  margin-right: 4.8rem;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+}
+
+.card2-text p {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.badge2 {
+  display: flex;
+  gap: 12px;
+  padding-top: 0.7rem;
+  margin-left: -2.2rem;
+  margin-bottom: 1rem;
+}
+
+.card2-btn {
+  font-weight: bold;
+  background: var(--clr-btn);
+  text-align: center;
+  font-size: 20px;
+  color: var(--clr-secondary);
+  padding: 1rem 6.7rem;
+  border: none;
+  margin: 1.6rem -8rem;
+}
+
+.card2-badge {
+  padding: 9.5px;
+  background: gray;
+  color: white;
+  background: hsl(0, 0%, 31%);
 }

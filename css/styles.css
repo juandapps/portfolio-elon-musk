@@ -154,8 +154,7 @@ nav {
 }
 
 .card-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: auto;
 }
 
@@ -253,6 +252,7 @@ nav {
   background: url(/img/mobile-version/about/Frame.svg) no-repeat;
   background-color: var(--clr-primary);
   background-position: bottom right;
+  margin-bottom: -2px;
 }
 
 .about-text {

@@ -318,6 +318,7 @@ nav {
 
 .lang-stack li {
   float: left;
+  padding-left: 2rem;
 }
 
 .fix-skill {

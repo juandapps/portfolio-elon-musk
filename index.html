@@ -297,20 +297,22 @@
       >
         <input
           type="text"
-          autocomplete="off"
+          autocomplete="on"
           maxlength="30"
           name="name"
           id="name"
-          placeholder="  Full name"
+          placeholder="Full name"
+          spellcheck="true"
           required
         />
         <input
           type="email"
-          autocomplete="off"
+          autocomplete="on"
           maxlength="30"
           name="email"
           id="email"
-          placeholder="  Email address"
+          placeholder="johndoe@gmail.com"
+          required
         />
         <textarea
           name="message"
@@ -318,7 +320,9 @@
           cols="30"
           rows="10"
           maxlength="500"
-          placeholder="  Enter text here"
+          placeholder="Write you're message here!"
+          wrap="hard"
+          spellcheck="true"
           required
         ></textarea>
         <button type="submit" class="form-btn">Get in touch</button>

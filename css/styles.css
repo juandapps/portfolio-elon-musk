@@ -308,17 +308,9 @@ nav {
   margin-right: 1rem;
 }
 
-.lang-title h2 {
-  /* float: left; */
-}
-
-.lang-title img {
-  /* float: right; */
-}
-
-.lang-stack li {
-  float: left;
-  padding-left: 2rem;
+.lang-stack {
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .fix-skill {

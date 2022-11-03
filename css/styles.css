@@ -40,6 +40,7 @@ header {
   background: url(/img/mobile-version/Frame-Header.svg) no-repeat;
   background-color: var(--clr-primary);
   background-position: bottom right;
+  background-size: 14rem;
   height: 100vh;
 }
 
@@ -108,9 +109,12 @@ nav {
 }
 
 .contact h2 {
-  margin-top: 3rem;
   text-align: center;
   color: #172b4d;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 8rem;
+  font-size: 2.7rem;
 }
 
 #heading h2 {
@@ -317,4 +321,86 @@ nav {
   margin-left: 2.6rem;
 }
 
+/* FOOTER */
+.footer-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+footer ul {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.m-hr {
+  background: #505f79;
+  opacity: 50%;
+}
+
+.last-hr {
+  background: #0d151e;
+  height: 5px;
+  width: 134px;
+  justify-content: center;
+  margin: 0.5rem auto;
+  border-radius: 4px;
+}
+
+textarea {
+  background-color: #fbf8f7;
+  border: 2px solid orange;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 /* CONTACT SECTION */
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 6rem;
+  transform: scale(1.1);
+  gap: 6px;
+}
+
+input {
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  margin-top: 1.3rem;
+  padding-bottom: 0.7rem;
+}
+
+.form-btn {
+  font-weight: bold;
+  background: var(--clr-btn);
+  text-align: center;
+  color: var(--clr-secondary);
+  padding: 1rem;
+  border: none;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
+input[type='text'],
+[type='email'] {
+  padding: 10px 15px;
+}
+
+textarea[name='message'] {
+  padding: 10px 15px;
+  padding-top: 1rem;
+}
+
+/* ANIMATIONS */
+.form-btn:hover {
+  color: #f55800;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  cursor: pointer;
+}

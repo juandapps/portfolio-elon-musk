@@ -408,3 +408,84 @@ textarea[name='message'] {
   width: 210px;
   transform: scale(1.3);
 }
+
+/* MOBILE QUERY || SM */
+@media (max-width: 768px) {
+  header .menu {
+    display: none;
+  }
+}
+
+/* DESKTOP QUERY || MD */
+@media (min-width: 769px) {
+  .hamburger,
+  .bx,
+  .bx-menu {
+    display: none;
+  }
+
+  header {
+    background: url(/img/desktop-version/frames/frame-1.svg) no-repeat;
+    background-color: var(--clr-primary);
+    background-position: top right;
+    background-size: 40%;
+  }
+
+  header .menu {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  header .menu .menu-link {
+    padding-right: 11px;
+  }
+
+  header .menu-link a {
+    color: white;
+  }
+
+  header .menu .contact-icon {
+    padding-right: 9rem;
+    color: white;
+  }
+
+  #logo {
+    padding-left: 9rem;
+  }
+
+  #heading {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding-top: 5rem;
+  }
+
+  #heading .intro {
+    order: 2;
+    padding-left: 1rem;
+  }
+
+  #heading .intro p {
+    width: 50%;
+  }
+
+  #heading .icons {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    margin: auto 23px;
+    padding-top: 7rem;
+  }
+
+  #heading .icons h1 {
+    font-size: 5rem;
+  }
+
+  #heading .icons h2 {
+    font-size: 2.4rem;
+  }
+
+  #heading .icons p {
+    line-height: 1.5;
+    width: 45%;
+  }
+}

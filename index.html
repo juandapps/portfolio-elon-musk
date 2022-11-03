@@ -282,25 +282,66 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section>
-      <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-
-      <form action="https://formspree.io/f/mrgdolqb" method="post"> <!--Please put your own formspree endpoint-->
-        <ul>
-          <li>
-            <input type="text" id="name" name="user_name" placeholder="John Doe" />
-          </li>
-          <li>
-            <input type="email" id="mail" name="user_email" placeholder="johndoe@gmail.com" />
-          </li>
-          <li>
-            <textarea id="msg" name="user_message">Enter text here</textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Get in touch</button>
-          </li>
-        </ul>
+    <section id="contact" class="contact">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form
+        class="contact-me"
+        action="https://formspree.io/f/xoqbpleb"
+        method="POST"
+      >
+        <input
+          type="text"
+          autocomplete="off"
+          maxlength="30"
+          name="name"
+          id="name"
+          placeholder="  Full name"
+          required
+        />
+        <input
+          type="email"
+          autocomplete="off"
+          maxlength="30"
+          name="email"
+          id="email"
+          placeholder="  Email address"
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="  Enter text here"
+          required
+        ></textarea>
+        <button type="submit" class="form-btn">Get in touch</button>
       </form>
     </section>
+
+    <footer>
+      <hr class="m-hr" />
+      <ul class="footer-icons">
+        <li>
+          <img class="icon" src="img/socialmedia-blue/github.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/linkedin.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/peace.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/twitter.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/medium.svg" alt="" />
+        </li>
+      </ul>
+      <hr class="last-hr hide" />
+    </footer>
   </body>
 </html>

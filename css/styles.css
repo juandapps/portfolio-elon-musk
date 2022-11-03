@@ -381,10 +381,12 @@ input {
   background: var(--clr-btn);
   text-align: center;
   color: var(--clr-secondary);
-  padding: 1rem;
+  padding: 14px;
   border: none;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
+  width: 204px;
+  align-self: center;
 }
 
 input[type='text'],
@@ -403,4 +405,6 @@ textarea[name='message'] {
   background: #fff5e1;
   border: 1px solid #f55800;
   cursor: pointer;
+  width: 210px;
+  transform: scale(1.3);
 }

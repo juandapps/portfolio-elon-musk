@@ -561,7 +561,7 @@ textarea[name='message'] {
   #works .card2-btn {
     font-size: 24px;
     padding: 1rem 9.1rem;
-    margin: 19.9rem -8rem;
+    margin: 10.9rem -8rem;
   }
 
   /* UTILITY CLASSES */
@@ -614,5 +614,44 @@ textarea[name='message'] {
   #works .grid-card-4 {
     background: url(/img/desktop-version/grid/grid-first-second.svg);
     background-size: cover;
+  }
+
+  /* ABOUT ME SECTION */
+  #about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: none;
+    padding-top: 4rem;
+  }
+
+  #about img {
+    margin-left: 19rem;
+    height: 521px;
+    margin-top: 5rem;
+  }
+
+  #about .about-text {
+    margin-left: 5rem;
+  }
+
+  #about .about-text h2 {
+    font-size: 4.5rem;
+  }
+
+  #about .about-text p {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    width: 150%;
+  }
+
+  /* TECHNOLOGIES */
+  #technologies .tech-wrapper {
+    display: flex;
+    gap: 20rem;
+    transform: scale(1.1);
+  }
+
+  #technologies .fix-skill {
+    margin-left: 0;
   }
 }

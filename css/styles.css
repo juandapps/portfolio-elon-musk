@@ -468,6 +468,7 @@ textarea[name='message'] {
 
   #heading .intro p {
     width: 50%;
+    line-height: 1.4;
   }
 
   #heading .icons {
@@ -653,5 +654,45 @@ textarea[name='message'] {
 
   #technologies .fix-skill {
     margin-left: 0;
+  }
+
+  /* CONTACT */
+  #contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact h2 {
+    width: 60%;
+    text-align: start;
+  }
+
+  #contact form {
+    margin-right: 9.6rem;
+    margin-top: 4.5rem;
+  }
+
+  #contact .form-btn {
+    align-self: start;
+    width: 145px;
+    font-size: 1rem;
+  }
+
+  #contact textarea {
+    height: 146px;
+    border: none;
+  }
+
+  #contact .form-btn:hover {
+    transform: none;
+  }
+
+  #contact .desktop-inputs {
+    display: flex;
+    gap: 1.7rem;
+  }
+
+  #contact input[type='text'] {
+    padding-right: 123px;
   }
 }

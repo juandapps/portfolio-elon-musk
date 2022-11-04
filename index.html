@@ -333,16 +333,29 @@
         action="https://formspree.io/f/xoqbpleb"
         method="POST"
       >
-        <input
-          type="text"
-          autocomplete="on"
-          maxlength="30"
-          name="name"
-          id="name"
-          placeholder="Full name"
-          spellcheck="true"
-          required
-        />
+        <!-- DESKTOP INPUTS -->
+        <div class="desktop-inputs">
+          <input
+            type="text"
+            autocomplete="on"
+            maxlength="30"
+            name="name"
+            id="name"
+            placeholder="John"
+            spellcheck="true"
+            required
+          />
+          <input
+            type="text"
+            autocomplete="on"
+            maxlength="30"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+            spellcheck="true"
+            required
+          />
+        </div>
         <input
           type="email"
           autocomplete="on"

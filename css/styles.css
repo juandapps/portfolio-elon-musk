@@ -411,7 +411,8 @@ textarea[name='message'] {
 
 /* MOBILE QUERY || SM */
 @media (max-width: 768px) {
-  header .menu {
+  .menu,
+  .desk-img {
     display: none;
   }
 }
@@ -420,7 +421,8 @@ textarea[name='message'] {
 @media (min-width: 769px) {
   .hamburger,
   .bx,
-  .bx-menu {
+  .bx-menu,
+  .card-img {
     display: none;
   }
 
@@ -487,5 +489,130 @@ textarea[name='message'] {
   #heading .icons p {
     line-height: 1.5;
     width: 45%;
+  }
+
+  #works .divider {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #works .divider h2 {
+    color: #091e42;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+  }
+
+  #works .divider hr {
+    width: 65%;
+    margin: auto 1px;
+  }
+
+  /* DESKTOP CARDS */
+  #works .card {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #works .card-content {
+    margin-left: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+
+  #works .card-text {
+    padding-top: 0.6rem;
+    width: 729px;
+    font-size: 29px;
+  }
+
+  #works .card-text h2 {
+    font-size: 44px;
+    font-family: 'Crete Round';
+    color: #091e42;
+    font-weight: 400;
+  }
+
+  #works .card .desk-img {
+    height: 592px;
+    width: 811px;
+  }
+
+  #works .badge {
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+  /* GRID LAYOUT */
+  #works .grid-layout-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+  }
+
+  #works .card2 {
+    width: 498px;
+    height: 535px;
+    margin: 1rem;
+    background: none;
+  }
+
+  #works .card2-btn {
+    font-size: 24px;
+    padding: 1rem 9.1rem;
+    margin: 19.9rem -8rem;
+  }
+
+  /* UTILITY CLASSES */
+  #works .border {
+    border: 3px solid black;
+  }
+
+  #works .hide-btn {
+    display: none;
+  }
+
+  #works .grid-card-title {
+    color: white;
+    font-weight: 400;
+  }
+
+  #works .card2-text {
+    margin-top: 11.7rem;
+    display: block;
+  }
+
+  #works .card2-text p {
+    margin-top: 1.2rem;
+  }
+
+  #works .badge2 {
+    padding-top: 3rem;
+    margin-left: -8rem;
+  }
+
+  #works .card2-badge {
+    background: hsl(0, 0%, 45%);
+  }
+
+  #works .grid-card-1 {
+    background: url(/img/desktop-version/grid/grid-card-1.svg);
+    background-size: cover;
+  }
+
+  #works .grid-card-2 {
+    background: url(/img/desktop-version/grid/grid-card-2.svg);
+    background-size: cover;
+  }
+
+  #works .grid-card-3 {
+    background: url(/img/desktop-version/grid/grid-card-3.svg);
+    background-size: cover;
+  }
+
+  #works .grid-card-4 {
+    background: url(/img/desktop-version/grid/grid-first-second.svg);
+    background-size: cover;
   }
 }

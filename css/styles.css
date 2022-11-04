@@ -586,10 +586,11 @@ textarea[name='message'] {
 
   #works .card2-text p {
     margin-top: 1.2rem;
+    line-height: 1.3;
   }
 
   #works .badge2 {
-    padding-top: 3rem;
+    padding-top: 2rem;
     margin-left: -8rem;
   }
 
@@ -615,6 +616,10 @@ textarea[name='message'] {
   #works .grid-card-4 {
     background: url(/img/desktop-version/grid/grid-first-second.svg);
     background-size: cover;
+  }
+
+  #works .fix-badge {
+    padding-top: 4.3rem;
   }
 
   /* ABOUT ME SECTION */

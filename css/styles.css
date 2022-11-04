@@ -487,6 +487,11 @@ textarea[name='message'] {
     font-size: 5rem;
   }
 
+  #contact h2 {
+    width: 60%;
+    text-align: start;
+  }
+
   #heading .icons h2 {
     font-size: 2.4rem;
   }
@@ -534,7 +539,7 @@ textarea[name='message'] {
 
   #works .card-text h2 {
     font-size: 44px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     color: #091e42;
     font-weight: 400;
   }
@@ -669,11 +674,6 @@ textarea[name='message'] {
   #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-
-  #contact h2 {
-    width: 60%;
-    text-align: start;
   }
 
   #contact form {

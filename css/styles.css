@@ -59,6 +59,11 @@ nav {
   color: white;
 }
 
+#logo h3:hover {
+  transform: rotateY(360deg);
+  transition-duration: 2s;
+}
+
 .hamburger {
   background: none;
   border: none;

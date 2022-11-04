@@ -704,4 +704,11 @@ textarea[name='message'] {
   #contact input[type='text'] {
     padding-right: 123px;
   }
+
+  /* DESKTOP ANIMATIONS */
+  .btn-anim:hover {
+    color: #e05304;
+    background-color: #fff5e1;
+    border: 0.1rem solid #e05304;
+  }
 }

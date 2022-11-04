@@ -127,6 +127,7 @@ nav {
 .card2-text p {
   font-size: 1rem;
   margin-top: 0.3rem;
+  line-height: 1.4;
 }
 
 .card-text p:nth-child(2) {
@@ -412,7 +413,9 @@ textarea[name='message'] {
 /* MOBILE QUERY || SM */
 @media (max-width: 768px) {
   .menu,
-  .desk-img {
+  .desk-img,
+  .desktop-inputs,
+  .grid-card-title {
     display: none;
   }
 }
@@ -422,7 +425,8 @@ textarea[name='message'] {
   .hamburger,
   .bx,
   .bx-menu,
-  .card-img {
+  .card-img,
+  .hide-this {
     display: none;
   }
 

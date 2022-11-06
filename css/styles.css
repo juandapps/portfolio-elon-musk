@@ -424,6 +424,7 @@ textarea[name='message'] {
 @media (min-width: 769px) {
   html {
     width: fit-content;
+    overflow-x: hidden;
   }
 
   .hamburger,

@@ -636,7 +636,7 @@ textarea[name='message'] {
   }
 
   #works .grid-card-1 {
-    background: url(../img/desktop-version/grid/grid-card-1.svg);
+    background-image: url(../img/desktop-version/grid/grid-card-1.svg);
     background-size: cover;
   }
 

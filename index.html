@@ -10,6 +10,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- HERO SECTION -->
@@ -18,13 +25,29 @@
         <div id="logo">
           <h3>Elon Musk</h3>
         </div>
+
+        <ul class="menu">
+          <li class="menu-link">
+            <a href="#works">Portfolio</a>
+          </li>
+          <li class="menu-link">
+            <a href="#about">About</a>
+          </li>
+          <li class="menu-link">
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="contact-icon">
+            <i class="fa-regular fa-envelope"></i>
+          </li>
+        </ul>
+
         <button class="hamburger">
           <i class="bx bx-menu"></i>
         </button>
       </nav>
 
       <div id="heading">
-        <div>
+        <div class="intro">
           <h1>Hey There. <br />I'm Elon</h1>
           <h2>I'am a Software Developer</h2>
           <p>
@@ -62,146 +85,170 @@
         <hr />
       </div>
 
-      <!-- MOBILE CARDS -->
       <div class="card">
-        <div class="card-img">
-          <img
-            src="/img/mobile-version/works/multi-post-stories-1.svg"
-            alt="multi-post stories"
-            width="380"
-            height="380"
-          />
+        <!-- MOBILE IMG -->
+        <img
+          src="/img/mobile-version/works/multi-post-stories-1.svg"
+          alt="multi-post stories"
+          width="380"
+          height="380"
+          class="card-img"
+        />
+        <!-- DESKTOP IMG -->
+        <img
+          src="/img/desktop-version/cards/multi-post.svg"
+          alt=""
+          class="desk-img"
+        />
+        <div class="card-content">
+          <div class="card-text">
+            <h2>Multi-Post Stories</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+          </div>
+          <ul class="badge">
+            <li><a href="#" class="card-badge">css</a></li>
+            <li><a href="#" class="card-badge">html</a></li>
+            <li><a href="#" class="card-badge">bootstrap</a></li>
+            <li><a href="#" class="card-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card-btn">See project</button>
         </div>
-        <div class="card-text">
-          <h2>Multi-Post Stories</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis,
-            non ea quaerat officiis dolorem consequatur exercitationem, a
-            voluptatem vero vel repellat neque labore molestiae iusto sed modi
-            mollitia tempore. Vero!
-          </p>
-        </div>
-        <ul class="badge">
-          <li><a href="#" class="card-badge">css</a></li>
-          <li><a href="#" class="card-badge">html</a></li>
-          <li><a href="#" class="card-badge">bootstrap</a></li>
-          <li><a href="#" class="card-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card-btn">See project</button>
       </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+      <!-- GRID LAYOUT -->
+      <div class="grid-layout-wrapper">
+        <div class="card2 border grid-card-1">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <p class="hide-btn">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2 hide-btn">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
-      </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+        <div class="card2 grid-card-2">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <h2 class="grid-card-title">
+              Data Dashboard <br />
+              Healthcare
+            </h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn hide-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
-      </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+        <div class="card2 grid-card-3">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <h2 class="grid-card-title">Website Portfolio</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2 fix-badge">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn hide-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
-      </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+        <div class="card2 grid-card-4">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <h2 class="grid-card-title">
+              Professional Art <br />
+              Printing Data More
+            </h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn hide-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
-      </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+        <div class="card2 grid-card-2">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <h2 class="grid-card-title">
+              Data Dashboard <br />
+              Healthcare
+            </h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn hide-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
-      </div>
 
-      <div class="card2">
-        <div class="card2-text">
-          <h2>
-            Professional Art <br />
-            Printing Data
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
-            debitis laboriosam voluptatibus?
-          </p>
+        <div class="card2 grid-card-3">
+          <div class="card2-text">
+            <h2 class="hide-btn">
+              Professional Art <br />
+              Printing Data
+            </h2>
+            <h2 class="grid-card-title">Website Portfolio</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+          </div>
+          <ul class="badge2 fix-badge">
+            <li><a href="#" class="card2-badge">html</a></li>
+            <li><a href="#" class="card2-badge">bootstrap</a></li>
+            <li><a href="#" class="card2-badge">Ruby</a></li>
+          </ul>
+          <button type="submit" class="card2-btn hide-btn">See project</button>
         </div>
-        <ul class="badge2">
-          <li><a href="#" class="card2-badge">html</a></li>
-          <li><a href="#" class="card2-badge">bootstrap</a></li>
-          <li><a href="#" class="card2-badge">Ruby</a></li>
-        </ul>
-        <button type="submit" class="card2-btn">See project</button>
       </div>
     </section>
 
@@ -217,6 +264,8 @@
         </p>
         <button type="submit" class="about-btn">Get My Resume</button>
       </div>
+      <!-- DESKTOP IMG -->
+      <img src="./img/desktop-version/about-me.svg" class="desk-img" />
     </section>
 
     <!-- TECHNOLOGIES SECTION-->
@@ -283,5 +332,98 @@
         </div>
       </div>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2>
+        I'm always interested in hearing about new projects, so if you'd like to
+        chat please get in touch.
+      </h2>
+      <form
+        class="contact-me"
+        action="https://formspree.io/f/xoqbpleb"
+        method="POST"
+      >
+        <!-- DESKTOP INPUTS -->
+        <div class="desktop-inputs">
+          <input
+            type="text"
+            autocomplete="on"
+            maxlength="30"
+            name="name"
+            id="name"
+            placeholder="John"
+            spellcheck="true"
+            required
+          />
+          <input
+            type="text"
+            autocomplete="on"
+            maxlength="30"
+            name="lastName"
+            id="lastName"
+            placeholder="Doe"
+            spellcheck="true"
+            required
+          />
+        </div>
+
+        <!-- MOBILE INPUT -->
+        <input
+          type="text"
+          autocomplete="on"
+          maxlength="30"
+          name="name"
+          id="name"
+          placeholder="John Doe"
+          spellcheck="true"
+          class="hide-this"
+          required
+        />
+        <input
+          type="email"
+          autocomplete="on"
+          maxlength="30"
+          name="email"
+          id="email"
+          placeholder="johndoe@gmail.com"
+          required
+        />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          maxlength="500"
+          placeholder="Write you're message here!"
+          wrap="hard"
+          spellcheck="true"
+          required
+        ></textarea>
+        <button type="submit" class="form-btn">Get in touch</button>
+      </form>
+    </section>
+
+    <footer>
+      <hr class="m-hr" />
+      <ul class="footer-icons">
+        <li>
+          <img class="icon" src="img/socialmedia-blue/github.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/linkedin.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/peace.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/twitter.svg" alt="" />
+        </li>
+        <li>
+          <img class="icon" src="img/socialmedia-blue/medium.svg" alt="" />
+        </li>
+      </ul>
+      <hr class="last-hr hide" />
+    </footer>
   </body>
 </html>

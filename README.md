@@ -16,6 +16,10 @@
 - HTML, CSS, and JS
 - Yarn
 
+## Live Preview
+
+[Live Demo](https://juandapps.github.io/portfolio-elon-musk/)
+
 ## Authors
 
 👤 **Juan**

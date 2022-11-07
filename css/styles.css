@@ -433,7 +433,12 @@ textarea[name='message'] {
 @media (min-width: 769px) {
   html {
     width: fit-content;
-    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   .hamburger,
@@ -585,7 +590,7 @@ textarea[name='message'] {
   #works .card2-btn {
     font-size: 23px;
     padding: 1rem 9.1rem;
-    margin: 10.9rem 0;
+    margin: 17.1rem 0;
   }
 
   /* UTILITY CLASSES */
@@ -612,7 +617,7 @@ textarea[name='message'] {
   }
 
   #works .badge2 {
-    padding: 41px 20px;
+    padding: 9rem 20px;
   }
 
   #works .card2-badge {
@@ -641,7 +646,7 @@ textarea[name='message'] {
   }
 
   #works .fix-badge {
-    padding-top: 4.3rem;
+    padding-top: 11.3rem;
   }
 
   /* ABOUT ME SECTION */

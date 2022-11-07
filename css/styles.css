@@ -205,7 +205,7 @@ nav {
   height: 386px;
   padding-top: 0.5rem;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 7rem;
   background: url(/img/mobile-version/works/printing-data-correct.svg) no-repeat;
   background-position: center;
   background-size: 100%;
@@ -415,17 +415,28 @@ textarea[name='message'] {
     display: none;
   }
 
+  .grid-layout-wrapper {
+    margin-top: -4rem;
+  }
+
   .card2-btn {
-    margin: 1.1rem 0;
+    margin: 2rem 0;
     padding: 1rem 0;
   }
 
   .card2-text h2 {
-    padding-right: 4.8rem;
+    padding-right: 8.9rem;
+    margin-top: 7rem;
   }
 
   .badge2 {
     padding-left: 1rem;
+    margin-top: 7px;
+  }
+
+  header {
+    height: 100vh;
+    background-size: 11rem;
   }
 }
 
@@ -433,7 +444,12 @@ textarea[name='message'] {
 @media (min-width: 769px) {
   html {
     width: fit-content;
-    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+    display: none;
   }
 
   .hamburger,
@@ -585,7 +601,7 @@ textarea[name='message'] {
   #works .card2-btn {
     font-size: 23px;
     padding: 1rem 9.1rem;
-    margin: 10.9rem 0;
+    margin: 17.2rem 0;
   }
 
   /* UTILITY CLASSES */
@@ -612,7 +628,7 @@ textarea[name='message'] {
   }
 
   #works .badge2 {
-    padding: 41px 20px;
+    padding: 9rem 20px;
   }
 
   #works .card2-badge {
@@ -641,7 +657,7 @@ textarea[name='message'] {
   }
 
   #works .fix-badge {
-    padding-top: 4.3rem;
+    padding-top: 11.3rem;
   }
 
   /* ABOUT ME SECTION */

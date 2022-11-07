@@ -227,8 +227,6 @@ nav {
   display: flex;
   gap: 12px;
   padding-top: 0.7rem;
-  margin-left: -2.2rem;
-  margin-bottom: 1rem;
 }
 
 .card2-btn {
@@ -416,6 +414,19 @@ textarea[name='message'] {
   .grid-card-title {
     display: none;
   }
+
+  .card2-btn {
+    margin: 1.1rem 0;
+    padding: 1rem 0;
+  }
+
+  .card2-text h2 {
+    padding-right: 4.8rem;
+  }
+
+  .badge2 {
+    padding-left: 1rem;
+  }
 }
 
 /* DESKTOP QUERY */
@@ -562,6 +573,7 @@ textarea[name='message'] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
+    gap: 1rem;
   }
 
   #works .card2 {
@@ -571,9 +583,9 @@ textarea[name='message'] {
   }
 
   #works .card2-btn {
-    font-size: 24px;
+    font-size: 23px;
     padding: 1rem 9.1rem;
-    margin: 10.9rem -8rem;
+    margin: 10.9rem 0;
   }
 
   /* UTILITY CLASSES */
@@ -600,8 +612,7 @@ textarea[name='message'] {
   }
 
   #works .badge2 {
-    padding-top: 2rem;
-    padding-left: 1rem;
+    padding: 41px 20px;
   }
 
   #works .card2-badge {
@@ -616,7 +627,7 @@ textarea[name='message'] {
   #works .grid-card-2 {
     background: url(/img/desktop-version/grid/grid-card-2.svg);
     background-size: cover;
-    padding: 10px 20px;
+    padding: 10px 2px;
   }
 
   #works .grid-card-3 {

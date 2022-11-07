@@ -636,7 +636,7 @@ textarea[name='message'] {
   }
 
   #works .grid-card-1 {
-    background-image: url(../img/desktop-version/grid/grid-card-1.svg);
+    background: url('../img/desktop-version/grid/grid-card-1.svg');
     background-size: cover;
   }
 
@@ -732,5 +732,6 @@ textarea[name='message'] {
 
   #contact input[type='text'] {
     padding-right: 123px;
+    width: 100%;
   }
 }

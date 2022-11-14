@@ -16,5 +16,14 @@ function toggleMenu() {
       menu.classList.toggle('overlay');
     }
   });
+
+  // HIDE MENU
+  document.querySelectorAll('.menu-link').forEach((e) => {
+    e.addEventListener('click', () => {
+      button.classList.toggle('active');
+      menu.classList.toggle('overlay');
+      envelope.style.display = 'flex';
+    });
+  });
 }
 toggleMenu();

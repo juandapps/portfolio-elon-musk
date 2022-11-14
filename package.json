@@ -12,6 +12,9 @@
     "stylelint-scss": "3.x"
   },
   "dependencies": {
+    "babel-eslint": "10.x",
+    "eslint-config-airbnb-base": "14.x",
+    "eslint-plugin-import": "2.x",
     "lighthouse": "^9.6.7"
   }
 }

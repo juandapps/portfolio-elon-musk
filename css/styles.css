@@ -94,13 +94,13 @@ nav {
 
 .hamburger.active .h-btn:nth-child(1) {
   width: 22px;
-  transform: translateY(0px) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
   background: gray;
 }
 
 .hamburger.active .h-btn:nth-child(2) {
   width: 22px;
-  transform: translateY(0px) rotate(315deg);
+  transform: translateY(0) rotate(315deg);
   background: gray;
 }
 
@@ -247,8 +247,8 @@ nav {
   padding-top: 0.5rem;
   margin: 0 auto;
   margin-top: 7rem;
-  background: url('../img/mobile-version/works/printing-data-correct.svg')
-    no-repeat;
+  background: url('../img/mobile-version/works/printing-data-correct.svg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
@@ -472,7 +472,6 @@ textarea[name='message'] {
     right: 0;
     bottom: 0;
     z-index: 99;
-    background: black;
     color: white;
     list-style: none;
     padding-top: 4rem;
@@ -510,9 +509,6 @@ textarea[name='message'] {
 
   .menu .menu-link a {
     color: #fff5e1;
-  }
-
-  #menu {
   }
 }
 
@@ -617,13 +613,13 @@ textarea[name='message'] {
     font-weight: 400;
   }
 
+  .menu .menu-link hr {
+    display: none;
+  }
+
   #works .divider hr {
     width: 65%;
     margin: auto 1px;
-  }
-
-  .menu .menu-link hr {
-    display: none;
   }
 
   /* DESKTOP CARDS */

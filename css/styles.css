@@ -135,15 +135,6 @@ nav {
   font-size: 3.5rem;
 }
 
-.card h2 {
-  margin-top: -1.2rem;
-}
-
-.card2-text h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-}
-
 .about-text h2 {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
@@ -167,16 +158,6 @@ nav {
   padding-top: 0.5rem;
 }
 
-.card2-text p {
-  font-size: 1rem;
-  margin-top: 0.3rem;
-  line-height: 1.4;
-}
-
-.card-text p:nth-child(2) {
-  padding-top: 0.6rem;
-}
-
 #heading p {
   color: white;
   font-family: 'poppins', sans-serif;
@@ -190,7 +171,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .divider hr {
@@ -199,95 +180,6 @@ nav {
   width: 327px;
   height: 2px;
   border-radius: 4px;
-}
-
-.card-wrapper {
-  display: grid;
-  margin: auto;
-}
-
-.card {
-  width: 375px;
-  padding-top: 0.5rem;
-  margin: 0 auto;
-  align-items: center;
-  margin-top: 1.5rem;
-}
-
-.card-img {
-  justify-content: center;
-}
-
-.badge {
-  display: flex;
-  padding-top: 1.2rem;
-  gap: 12px;
-}
-
-.card-badge {
-  border: solid 1.7px var(--clr-card-badge);
-  padding: 9.5px;
-  color: black;
-}
-
-.card-btn {
-  margin-top: 1.1rem;
-  font-weight: bold;
-  background: var(--clr-btn);
-  text-align: center;
-  font-size: 1.2rem;
-  color: var(--clr-secondary);
-  padding: 1rem;
-  border: none;
-}
-
-.card2 {
-  display: flex;
-  flex-direction: column;
-  width: 375px;
-  height: 386px;
-  padding-top: 0.5rem;
-  margin: 0 auto;
-  margin-top: 7rem;
-  background: url('../img/mobile-version/works/printing-data-correct.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-}
-
-.card2-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-  color: var(--clr-secondary);
-  margin-top: 2.7rem;
-  margin-left: 1rem;
-  width: 95%;
-}
-
-.badge2 {
-  display: flex;
-  gap: 12px;
-  padding-top: 0.7rem;
-}
-
-.card2-btn {
-  font-weight: bold;
-  background: var(--clr-btn);
-  text-align: center;
-  font-size: 20px;
-  color: var(--clr-secondary);
-  padding: 1rem 6.7rem;
-  border: none;
-  margin: 1.6rem -8rem;
-}
-
-.card2-badge {
-  padding: 9.5px;
-  color: white;
-  background: hsl(0, 0%, 31%);
 }
 
 /* ABOUT SECTION */
@@ -455,11 +347,136 @@ textarea[name='message'] {
   margin-top: 0.5rem;
 }
 
+/* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 87%;
+  margin: 0 auto;
+}
+
+.card-content {
+  margin-top: 1.4rem;
+}
+
+.card-container h2 {
+  margin-top: 1.4rem;
+  color: var(--clr-card-text);
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.card-content p {
+  margin-top: 0.7rem;
+}
+
+.card-container img {
+  width: 100%;
+}
+
+.card-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 32%;
+  border-radius: 0;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--clr-btn);
+  color: white;
+}
+
+.tag-1 {
+  border: solid 1px #8993a4;
+  padding: 0.5rem;
+}
+/* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.card-text {
+  padding-top: 7rem;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+}
+
+.card-text h2 {
+  color: white;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.card-text p {
+  color: white;
+}
+
+.card-btn-2 {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: var(--clr-btn);
+  color: white;
+}
+
+/* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.card-bg-mobile {
+  background: url(/img/print-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-bg-1 {
+}
+.card-bg-2 {
+}
+.card-bg-3 {
+}
+.card-bg-4 {
+}
+
+.card-tag-1 {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card-tag-2 {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.f-white {
+  color: white;
+}
+
+.tag-2 {
+  background: rgba(255, 255, 255, 0.13);
+  border: none;
+  padding: 0.5rem;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 /* MOBILE QUERY */
 @media (max-width: 768px) {
-  .desk-img,
-  .desktop-inputs,
-  .grid-card-title {
+  .desktop-inputs {
     display: none;
   }
 
@@ -484,25 +501,6 @@ textarea[name='message'] {
     padding-left: 1rem;
     background: #3c3a39;
     gap: 1rem;
-  }
-
-  .grid-layout-wrapper {
-    margin-top: -4rem;
-  }
-
-  .card2-btn {
-    margin: 2rem 0;
-    padding: 1rem 0;
-  }
-
-  .card2-text h2 {
-    padding-right: 8.9rem;
-    margin-top: 7rem;
-  }
-
-  .badge2 {
-    padding-left: 1rem;
-    margin-top: 7px;
   }
 
   header {
@@ -533,7 +531,6 @@ textarea[name='message'] {
   }
 
   .hamburger,
-  .card-img,
   .hide-this {
     display: none;
   }
@@ -630,118 +627,6 @@ textarea[name='message'] {
     margin: auto 1px;
   }
 
-  /* DESKTOP CARDS */
-  #works .card {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #works .card-content {
-    margin-left: 2rem;
-    line-height: 1.5;
-    margin-bottom: 4rem;
-  }
-
-  #works .card-text {
-    padding-top: 0.6rem;
-    width: 729px;
-    font-size: 29px;
-  }
-
-  #works .card-text h2 {
-    font-size: 44px;
-    font-family: 'Crete Round', sans-serif;
-    color: #091e42;
-    font-weight: 400;
-  }
-
-  #works .card .desk-img {
-    height: 592px;
-    width: 811px;
-  }
-
-  #works .badge {
-    margin-top: 2px;
-    margin-bottom: 10px;
-  }
-
-  /* GRID LAYOUT */
-  #works .grid-layout-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 auto;
-    gap: 1rem;
-  }
-
-  #works .card2 {
-    width: 498px;
-    height: 535px;
-    background: none;
-  }
-
-  #works .card2-btn {
-    font-size: 23px;
-    padding: 1rem 9.1rem;
-    margin: 17.2rem 0;
-  }
-
-  /* UTILITY CLASSES */
-  #works .border {
-    border: 3px solid black;
-  }
-
-  #works .hide-btn {
-    display: none;
-  }
-
-  #works .grid-card-title {
-    color: white;
-  }
-
-  #works .card2-text {
-    margin-top: 11.7rem;
-    display: block;
-  }
-
-  #works .card2-text p {
-    margin-top: 1.2rem;
-    line-height: 1.3;
-  }
-
-  #works .badge2 {
-    padding: 9rem 20px;
-  }
-
-  #works .card2-badge {
-    background: hsl(0, 0%, 45%);
-  }
-
-  #works .grid-card-1 {
-    background: url('../img/desktop-version/grid/grid-card-1.svg');
-    background-size: cover;
-  }
-
-  #works .grid-card-2 {
-    background: url('../img/desktop-version/grid/grid-card-2.svg');
-    background-size: cover;
-    padding: 10px 2px;
-  }
-
-  #works .grid-card-3 {
-    background: url('../img/desktop-version/grid/grid-card-3.svg');
-    background-size: cover;
-  }
-
-  #works .grid-card-4 {
-    background: url('../img/desktop-version/grid/grid-first-second.svg');
-    background-size: cover;
-  }
-
-  #works .fix-badge {
-    padding-top: 11.3rem;
-  }
-
   /* ABOUT ME SECTION */
   #about {
     display: grid;
@@ -815,5 +700,16 @@ textarea[name='message'] {
   #contact input[type='text'] {
     padding-right: 123px;
     width: 100%;
+  }
+
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100% 16.6% 16.6%;
+    grid-template-areas: 'main' 'card card card' 'card card card';
+  }
+
+  .gridSPan {
+    grid-column: 1 / span 3;
   }
 }

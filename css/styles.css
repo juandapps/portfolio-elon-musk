@@ -32,6 +32,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 1.2rem;
+  overflow-x: hidden;
 }
 
 /* HERO SECTION */
@@ -55,16 +56,62 @@ nav {
 
 #logo {
   margin-right: auto;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   color: white;
 }
 
 .hamburger {
-  background: none;
+  cursor: pointer;
+  background: transparent;
+  width: 19%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
   border: none;
-  font-size: 2rem;
-  margin-right: 0.5rem;
-  color: white;
+}
+
+.h-btn {
+  background: white;
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.h-btn:nth-child(1) {
+  transform: translateY(-7px);
+  width: 18px;
+  margin-right: 5px;
+}
+
+.h-btn:nth-child(2) {
+  transform: translateY(7px);
+  width: 14px;
+  margin-right: 6px;
+}
+
+.hamburger.active .h-btn:nth-child(1) {
+  position: fixed;
+  width: 22px;
+  transform: translateY(0) rotate(45deg);
+  background: gray;
+}
+
+.hamburger.active .h-btn:nth-child(2) {
+  position: fixed;
+  width: 22px;
+  transform: translateY(0) rotate(315deg);
+  background: gray;
+}
+
+.hamburger.active .h-btn:nth-child(3) {
+  position: fixed;
+  transform: translateX(40px);
+  background: white;
+  display: none;
 }
 
 .icons {
@@ -205,8 +252,8 @@ nav {
   padding-top: 0.5rem;
   margin: 0 auto;
   margin-top: 7rem;
-  background: url('../img/mobile-version/works/printing-data-correct.svg')
-    no-repeat;
+  background: url('../img/mobile-version/works/printing-data-correct.svg');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
@@ -406,13 +453,40 @@ textarea[name='message'] {
   transform: scale(1.3);
 }
 
+.menu-link hr {
+  width: 92%;
+  margin-top: 0.5rem;
+}
+
 /* MOBILE QUERY */
 @media (max-width: 768px) {
-  .menu,
   .desk-img,
   .desktop-inputs,
   .grid-card-title {
     display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    flex-direction: column;
+    padding-left: 1rem;
+    background: #3c3a39;
+    gap: 1rem;
   }
 
   .grid-layout-wrapper {
@@ -438,6 +512,15 @@ textarea[name='message'] {
     height: 100vh;
     background-size: 11rem;
   }
+
+  .menu-link {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .menu .menu-link a {
+    color: #fff5e1;
+  }
 }
 
 /* DESKTOP QUERY */
@@ -453,8 +536,6 @@ textarea[name='message'] {
   }
 
   .hamburger,
-  .bx,
-  .bx-menu,
   .card-img,
   .hide-this {
     display: none;
@@ -541,6 +622,10 @@ textarea[name='message'] {
     color: #091e42;
     font-family: 'Crete Round', sans-serif;
     font-weight: 400;
+  }
+
+  .menu .menu-link hr {
+    display: none;
   }
 
   #works .divider hr {

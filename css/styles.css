@@ -450,6 +450,7 @@ textarea[name='message'] {
 
 .menu-link hr {
   width: 95%;
+  margin-top: 1rem;
 }
 
 /* MOBILE QUERY */

@@ -63,7 +63,7 @@ nav {
 .hamburger {
   cursor: pointer;
   background: transparent;
-  width: 50px;
+  width: 19%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,6 +108,7 @@ nav {
 .hamburger.active .h-btn:nth-child(3) {
   transform: translateX(40px);
   background: white;
+  display: none;
 }
 
 .icons {
@@ -450,8 +451,8 @@ textarea[name='message'] {
 }
 
 .menu-link hr {
-  width: 95%;
-  margin-top: 1rem;
+  width: 92%;
+  margin-top: 0.5rem;
 }
 
 /* MOBILE QUERY */
@@ -507,6 +508,11 @@ textarea[name='message'] {
   header {
     height: 100vh;
     background-size: 11rem;
+  }
+
+  .menu-link {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
   }
 
   .menu .menu-link a {

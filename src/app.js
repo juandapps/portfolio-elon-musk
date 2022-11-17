@@ -1,11 +1,13 @@
-import { createArr } from './components/createArr.js';
-import { dataArr } from './components/dataArr.js';
-import { primary } from './components/createFirst.js';
 import { toggleMenu } from './components/menu.js';
+import { primary, secondary } from './components/card-1-2.js';
+import { divider } from './components/divider.js';
+import { dataArr } from './components/dataArr.js';
+import { createArr } from './components/card-2-6.js';
 
 toggleMenu();
+divider();
 primary();
-
+secondary();
 dataArr.forEach((e) => {
   createArr(e.title, e.description, e.image, e.tags);
 });

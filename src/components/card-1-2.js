@@ -73,7 +73,7 @@ function primary(
   tag.innerHTML = tags;
 
   const button = document.createElement('button');
-  button.classList.add('card-btn');
+  button.classList.add('card-btn', 'modal-pointer');
   button.setAttribute('type', 'submit');
   button.innerHTML = 'See Project';
 

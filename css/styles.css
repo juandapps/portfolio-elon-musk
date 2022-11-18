@@ -561,6 +561,17 @@ textarea[name='message'] {
   .menu .menu-link a {
     color: #fff5e1;
   }
+
+  .form-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    flex-direction: column;
+  }
+
+  .form-btn-container p {
+    display: none;
+  }
 }
 
 /* DESKTOP QUERY */
@@ -920,6 +931,16 @@ textarea[name='message'] {
   }
 
   .hide-modal {
+    display: none;
+  }
+
+  .form-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .form-btn-container p {
     display: none;
   }
 }

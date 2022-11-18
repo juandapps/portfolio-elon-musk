@@ -1,19 +1,21 @@
-const email = document.getElementById('email');
-const form = document.getElementsByClassName('contact-me');
-const message = document.getElementsByClassName('x');
-
-form,addEventListener('submit', (a){
-  //your code if email has a capital letter display message and a.preventDefault
-})
+const submit = document.querySelector('.form-btn');
+const email = document.querySelector('.validate-email');
+const message = document.querySelector('.x');
 
 function validate() {
-  const check = (email = document.querySelector('.validate-email')) =>
-    /^[A-Z]*$/.test(email);
-  const result =
-    check == true
-      ? (document.querySelector('.x').style.display = 'flex')
-      : false;
+  // VALIDATE CAPITAL LETTERS WITH REGEX
+  const val = /^[A-Z]*$/;
+
+  // TRIGGER VALIDATION
+  submit.addEventListener('click', (e) => {
+    //your code if email has a capital letter display message and a.preventDefault
+    if (email.value.match(val)) {
+      return true;
+    } else {
+      message.style.display = 'flex';
+      e.preventDefault;
+    }
+  });
 }
 
 export { validate };
-

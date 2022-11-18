@@ -94,6 +94,25 @@ function popup(
 
   buttonsContainer.appendChild(button1);
   buttonsContainer.appendChild(button2);
+
+  // MODAL LOGIC
+  const btn = document.querySelector('.modal-pointer');
+  const modal = document.querySelector('.modal-container');
+  const x = document.querySelector('.bx, .bx-x');
+
+  if (modal.classList.contains('hide-modal')) {
+    btn.addEventListener('click', () => {
+      modal.classList.remove('hide-modal');
+    });
+  } else {
+    btn.addEventListener('click', () => {
+      modal.classList.add('hide-modal');
+    });
+  }
+
+  x.addEventListener('click', () => {
+    modal.classList.add('hide-modal');
+  });
 }
 
 export { popup };

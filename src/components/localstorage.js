@@ -6,7 +6,7 @@ const textarea = document.querySelector('#message');
 
 function localstorage() {
   form.addEventListener('input', () => {
-    const obj = {
+    let obj = {
       name: names.value,
       lastName: lastName.value,
       email: email.value,
@@ -15,6 +15,16 @@ function localstorage() {
 
     localStorage.setItem('store', JSON.stringify(obj));
   });
+
+  const recoverData = localStorage.getItem('store');
+  let obj = JSON.parse(recoverData);
+  console.log( obj.textarea)
+  if(obj != null){
+    names.value = obj.name
+    lastName.value = obj.lastName
+    email.value = obj.email
+    textarea.value = obj.textarea
+  }
 }
 
 export { localstorage };

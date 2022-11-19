@@ -1,7 +1,12 @@
 const root = document.querySelector('.modal-container');
+const sm = window.matchMedia('(min-width: 768px)');
 
 const modalData = [
-  {},
+  {
+    mobile: ` Multi Post Stories
+            <span class="bx bx-x"></span>
+    `,
+  },
   {
     desktop: './img/modal/deskModal.svg',
     title: `
@@ -43,7 +48,6 @@ const modalData = [
 ];
 
 function popup(
-  title = modalData[1].title,
   desktop = modalData[1].desktop,
   text = modalData[1].text,
   tag = modalData[1].tags,
@@ -59,9 +63,13 @@ function popup(
   textContainer.classList.add('modal-text-container');
   modalDiv.appendChild(textContainer);
 
+  // TITLE RESPONSIVENESS +++++++++++++++++++++++++
   const h2 = document.createElement('h2');
-  h2.innerHTML = title;
+  sm.matches
+    ? (h2.innerHTML = modalData[1].title)
+    : (h2.innerHTML = modalData[0].mobile);
   textContainer.appendChild(h2);
+  // +++++++++++++++++++++++++++++++++++++++++++++++
 
   const ul = document.createElement('ul');
   ul.classList.add('modal-tag');
@@ -99,10 +107,12 @@ function popup(
   const btn = document.querySelector('.modal-pointer');
   const modal = document.querySelector('.modal-container');
   const x = document.querySelector('.bx, .bx-x');
+  const overflow = document.querySelector('body');
 
   if (modal.classList.contains('hide-modal')) {
     btn.addEventListener('click', () => {
       modal.classList.remove('hide-modal');
+      overflow.style.overflow = 'hidden';
     });
   } else {
     btn.addEventListener('click', () => {
@@ -111,8 +121,16 @@ function popup(
   }
 
   x.addEventListener('click', () => {
-    modal.classList.add('hide-modal');
+    modal.classList.toggle('hide-modal');
+    overflow.style.removeProperty('overflow');
+    overflow.style.overflowX = 'hidden';
   });
+
+  const responsiveTitle = () =>
+    sm.matches
+      ? (h2.innerHTML = modalData[1].title)
+      : (h2.innerHTML = modalData[0].mobile);
+  sm.addEventListener('change', responsiveTitle);
 }
 
-export { popup };
+export { popup, modalData };

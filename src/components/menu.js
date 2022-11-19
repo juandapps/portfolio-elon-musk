@@ -1,6 +1,7 @@
 const button = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const envelope = document.querySelector('.fa-regular, .fa-envelope');
+const overflow = document.querySelector('body');
 
 // ACTIVATE MENU
 function toggleMenu() {
@@ -11,9 +12,12 @@ function toggleMenu() {
       button.classList.remove('active');
       menu.classList.toggle('overlay');
       envelope.style.display = 'flex';
+      overflow.style.removeProperty('overflow');
+      overflow.style.overflowX = 'hidden';
     } else {
       button.classList.add('active');
       menu.classList.toggle('overlay');
+      overflow.style.overflow = 'hidden';
     }
   });
 
@@ -23,6 +27,8 @@ function toggleMenu() {
       button.classList.toggle('active');
       menu.classList.toggle('overlay');
       envelope.style.display = 'flex';
+      overflow.style.removeProperty('overflow');
+      overflow.style.overflowX = 'hidden';
     });
   });
 }

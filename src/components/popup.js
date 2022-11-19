@@ -133,4 +133,4 @@ function popup(
   sm.addEventListener('change', responsiveTitle);
 }
 
-export { popup, modalData };
+export { popup };

@@ -151,11 +151,45 @@ nav {
   font-size: 2.7rem;
 }
 
+.divider h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+}
+
+.card-container h2 {
+  margin-top: 1.4rem;
+  color: var(--clr-card-text);
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.card-text h2 {
+  color: white;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.card-text-2 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
 #heading h2 {
   color: var(--clr-hamburger);
   font-size: 1.6rem;
   font-weight: 400;
   padding-top: 0.5rem;
+}
+
+.card-content p {
+  margin-top: 0.7rem;
+}
+
+.card-text p {
+  color: white;
 }
 
 #heading p {
@@ -172,11 +206,6 @@ nav {
   justify-content: center;
   text-align: center;
   margin-top: 10rem;
-}
-
-.divider h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
 }
 
 .divider hr {
@@ -360,6 +389,7 @@ textarea[name='message'] {
 }
 
 /* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .card-wrapper {
   display: flex;
   flex-direction: column;
@@ -378,18 +408,6 @@ textarea[name='message'] {
 
 .card-content {
   margin-top: 1.4rem;
-}
-
-.card-container h2 {
-  margin-top: 1.4rem;
-  color: var(--clr-card-text);
-  font-family: 'Crete Round', sans-serif;
-  font-size: 2.3rem;
-  font-weight: 400;
-}
-
-.card-content p {
-  margin-top: 0.7rem;
 }
 
 .card-container img {
@@ -413,6 +431,7 @@ textarea[name='message'] {
   border: solid 1px #8993a4;
   padding: 0.5rem;
 }
+
 /* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .card-text {
   padding-top: 7rem;
@@ -421,17 +440,6 @@ textarea[name='message'] {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 1rem;
-}
-
-.card-text h2 {
-  color: white;
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 2.3rem;
-}
-
-.card-text p {
-  color: white;
 }
 
 .card-btn-2 {
@@ -448,6 +456,7 @@ textarea[name='message'] {
 }
 
 /* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
 .card-bg-mobile {
   background: url(/img/print-mobile.svg);
   background-repeat: no-repeat;
@@ -459,6 +468,7 @@ textarea[name='message'] {
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .card-tag-2 {
   display: flex;
   gap: 1rem;
@@ -470,13 +480,8 @@ textarea[name='message'] {
   color: white;
 }
 
-.tag-2 {
-  background: rgba(255, 255, 255, 0.13);
-  border: none;
-  padding: 0.5rem;
-}
-
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CARD-2-DESKTOP*/
+
 .card-container-2 {
   display: flex;
   justify-content: center;
@@ -501,12 +506,6 @@ textarea[name='message'] {
   gap: 1rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.card-text-2 h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 2.3rem;
 }
 
 .tag-2 {
@@ -558,6 +557,10 @@ textarea[name='message'] {
     margin-top: 0.5rem;
   }
 
+  .modal-btn a {
+    color: white;
+  }
+
   .menu .menu-link a {
     color: #fff5e1;
   }
@@ -568,10 +571,6 @@ textarea[name='message'] {
     gap: 1.4rem;
     flex-direction: column;
   }
-
-  /* .form-btn-container p {
-    display: none;
-  } */
 
   /* MOBILE POPUP */
   .modal-container {
@@ -654,18 +653,8 @@ textarea[name='message'] {
     color: #3c3a39;
   }
 
-  .modal-btn a {
-    color: white;
-  }
-
   .hide-modal {
     display: none;
-  }
-
-  .form-btn-container {
-    display: flex;
-    align-items: center;
-    gap: 1.4rem;
   }
 
   .form-btn-hide {

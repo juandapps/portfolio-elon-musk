@@ -569,9 +569,9 @@ textarea[name='message'] {
     flex-direction: column;
   }
 
-  .form-btn-container p {
+  /* .form-btn-container p {
     display: none;
-  }
+  } */
 }
 
 /* DESKTOP QUERY */
@@ -940,7 +940,11 @@ textarea[name='message'] {
     gap: 1.4rem;
   }
 
-  .form-btn-container p {
+  /* .form-btn-container p {
+    display: none;
+  } */
+
+  .form-btn-hide {
     display: none;
   }
 }

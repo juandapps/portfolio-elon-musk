@@ -24,11 +24,11 @@ const modalData = [
             <li class="modal-tag-item">Ruby on rail</li>
     `,
     live: `
-                  <a
-                href="https://github.com/juandapps/portfolio-elon-musk"
+               <a
+                href="https://juandapps.github.io/portfolio-elon-musk/"
                 target="_blank"
               >
-                See Source <span class="bx bxl-github"></span>
+                See Live <span class="bx bx-link-external"></span>
               </a>
     `,
     source: `
@@ -94,6 +94,25 @@ function popup(
 
   buttonsContainer.appendChild(button1);
   buttonsContainer.appendChild(button2);
+
+  // MODAL LOGIC
+  const btn = document.querySelector('.modal-pointer');
+  const modal = document.querySelector('.modal-container');
+  const x = document.querySelector('.bx, .bx-x');
+
+  if (modal.classList.contains('hide-modal')) {
+    btn.addEventListener('click', () => {
+      modal.classList.remove('hide-modal');
+    });
+  } else {
+    btn.addEventListener('click', () => {
+      modal.classList.add('hide-modal');
+    });
+  }
+
+  x.addEventListener('click', () => {
+    modal.classList.add('hide-modal');
+  });
 }
 
 export { popup };

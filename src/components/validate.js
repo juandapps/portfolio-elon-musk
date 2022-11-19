@@ -1,19 +1,20 @@
-const submit = document.querySelector('.form-btn');
-const email = document.querySelector('.validate-email');
-const message = document.querySelector('.x');
-
 function validate() {
-  // VALIDATE CAPITAL LETTERS WITH REGEX
-  const val = /^[A-Z]*$/;
+  const capLetters = 'ABCDEFGHIJKLMNOPQRDSTUVWXYZ';
+  const form = document.querySelector('.form-btn');
+  const email = document.getElementById('email');
+  const errorMessage = document.querySelector('.x');
 
-  // TRIGGER VALIDATION
-  submit.addEventListener('click', (e) => {
-    //your code if email has a capital letter display message and a.preventDefault
-    if (email.value.match(val)) {
-      return true;
-    } else {
-      message.style.display = 'flex';
-      e.preventDefault;
+  form.addEventListener('click', (a) => {
+    const mail = email.value;
+    for (let i = 0; i < mail.length; i += 1) {
+      if (capLetters.includes(mail[i])) {
+        console.log('wedwe');
+        errorMessage.classList.remove('form-btn-hide');
+        a.preventDefault();
+        break;
+      } else {
+        errorMessage.classList.add('form-btn-hide');
+      }
     }
   });
 }

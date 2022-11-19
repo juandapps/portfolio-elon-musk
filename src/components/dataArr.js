@@ -46,7 +46,7 @@ const dataArr = [
     title: `Professional Art <br/> Printing Data More`,
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: 'card-bg-1',
+    image: 'card-bg-x',
     tags: `
                     <li class="tag-2">
                   <spa>css</spa>

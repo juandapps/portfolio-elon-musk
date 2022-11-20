@@ -151,11 +151,45 @@ nav {
   font-size: 2.7rem;
 }
 
+.divider h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+}
+
+.card-container h2 {
+  margin-top: 1.4rem;
+  color: var(--clr-card-text);
+  font-family: 'Crete Round', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.card-text h2 {
+  color: white;
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.card-text-2 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
 #heading h2 {
   color: var(--clr-hamburger);
   font-size: 1.6rem;
   font-weight: 400;
   padding-top: 0.5rem;
+}
+
+.card-content p {
+  margin-top: 0.7rem;
+}
+
+.card-text p {
+  color: white;
 }
 
 #heading p {
@@ -172,11 +206,6 @@ nav {
   justify-content: center;
   text-align: center;
   margin-top: 10rem;
-}
-
-.divider h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
 }
 
 .divider hr {
@@ -359,7 +388,8 @@ textarea[name='message'] {
   margin-top: 0.5rem;
 }
 
-/* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .card-wrapper {
   display: flex;
   flex-direction: column;
@@ -378,18 +408,6 @@ textarea[name='message'] {
 
 .card-content {
   margin-top: 1.4rem;
-}
-
-.card-container h2 {
-  margin-top: 1.4rem;
-  color: var(--clr-card-text);
-  font-family: 'Crete Round', sans-serif;
-  font-size: 2.3rem;
-  font-weight: 400;
-}
-
-.card-content p {
-  margin-top: 0.7rem;
 }
 
 .card-container img {
@@ -413,7 +431,8 @@ textarea[name='message'] {
   border: solid 1px #8993a4;
   padding: 0.5rem;
 }
-/* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .card-text {
   padding-top: 7rem;
   width: 87%;
@@ -421,17 +440,6 @@ textarea[name='message'] {
   flex-direction: column;
   align-items: flex-start;
   padding-left: 1rem;
-}
-
-.card-text h2 {
-  color: white;
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 2.3rem;
-}
-
-.card-text p {
-  color: white;
 }
 
 .card-btn-2 {
@@ -447,7 +455,8 @@ textarea[name='message'] {
   color: white;
 }
 
-/* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 .card-bg-mobile {
   background: url(/img/print-mobile.svg);
   background-repeat: no-repeat;
@@ -459,6 +468,7 @@ textarea[name='message'] {
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .card-tag-2 {
   display: flex;
   gap: 1rem;
@@ -470,13 +480,8 @@ textarea[name='message'] {
   color: white;
 }
 
-.tag-2 {
-  background: rgba(255, 255, 255, 0.13);
-  border: none;
-  padding: 0.5rem;
-}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CARD-2-DESKTOP */
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CARD-2-DESKTOP*/
 .card-container-2 {
   display: flex;
   justify-content: center;
@@ -501,12 +506,6 @@ textarea[name='message'] {
   gap: 1rem;
   margin-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.card-text-2 h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 400;
-  font-size: 2.3rem;
 }
 
 .tag-2 {
@@ -558,6 +557,10 @@ textarea[name='message'] {
     margin-top: 0.5rem;
   }
 
+  .modal-btn a {
+    color: white;
+  }
+
   .menu .menu-link a {
     color: #fff5e1;
   }
@@ -569,9 +572,94 @@ textarea[name='message'] {
     flex-direction: column;
   }
 
-  /* .form-btn-container p {
+  /* MOBILE POPUP */
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
+  }
+
+  .modal {
+    display: flex;
+    background: #ebecf0;
+    padding: 30px 50px;
+    width: 468px;
+    height: 811px;
+    max-width: 100%;
+    grid-gap: 1.5rem;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .modal-text-container {
+    grid-area: 1 / span 3;
+  }
+
+  .modal-content p {
+    width: 391px;
+    font-size: 1.2rem;
+    color: #344563;
+  }
+
+  .modal-buttons-container {
+    display: flex;
+    padding-top: 1.1rem;
+    gap: 1rem;
+  }
+
+  .modal-btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    background: #f55800;
+    font-weight: 500;
+  }
+
+  .bx.bx-x {
+    font-size: 2.2rem;
+    color: #344563;
+    cursor: pointer;
+  }
+
+  .modal-text-container h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    font-size: 1.7rem;
+    color: #172b4d;
+  }
+
+  .modal-tag {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2.8rem;
+  }
+
+  .modal-tag-item {
+    font-size: 1.2rem;
+    border: solid 1.5px #979493;
+    padding: 0.5rem;
+    color: #3c3a39;
+  }
+
+  .hide-modal {
     display: none;
-  } */
+  }
+
+  .form-btn-hide {
+    display: none;
+  }
 }
 
 /* DESKTOP QUERY */
@@ -605,6 +693,10 @@ textarea[name='message'] {
 
   header .menu .menu-link {
     padding-right: 11px;
+  }
+
+  .modal-btn a {
+    color: white;
   }
 
   header .menu-link a {
@@ -648,6 +740,14 @@ textarea[name='message'] {
     font-size: 5rem;
   }
 
+  .modal-text-container h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    font-size: 1.7rem;
+    color: #172b4d;
+  }
+
   #contact h2 {
     width: 60%;
     text-align: start;
@@ -688,8 +788,8 @@ textarea[name='message'] {
   #about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-image: none;
     padding-top: 4rem;
+    background-size: contain;
   }
 
   #about img {
@@ -790,20 +890,32 @@ textarea[name='message'] {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .card-bg-2 {
     background: url(/img/desktop-version/grid/grid-card-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .card-bg-3 {
     background: url(/img/desktop-version/grid/grid-card-3.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 3rem;
   }
+
   .card-bg-4 {
     background: url(/img/desktop-version/grid/grid-card-4.svg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .card-bg-x {
+    background: url(/img/grid-card-new.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3.1rem;
+    margin: -20px;
   }
 
   .card-btn-2 {
@@ -828,11 +940,12 @@ textarea[name='message'] {
   }
 
   .card-content-2 {
-    margin-top: -1.3rem;
+    margin-top: 1rem;
+    border: 2px solid black;
   }
 
   .card-text-2 {
-    padding-top: 7rem;
+    padding-top: 4.3rem;
     width: 87%;
     display: flex;
     flex-direction: column;
@@ -853,13 +966,15 @@ textarea[name='message'] {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: blue;
     border: none;
     width: 100vw;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    backdrop-filter: blur(5px);
   }
 
   .modal {
@@ -871,16 +986,11 @@ textarea[name='message'] {
     height: 631px;
     max-width: 100%;
     grid-gap: 1.5rem;
+    overflow: hidden;
   }
 
   .modal-text-container {
     grid-area: 1 / span 3;
-  }
-
-  .modal-content p {
-    width: 391px;
-    font-size: 1.2rem;
-    color: #344563;
   }
 
   .modal-buttons-container {
@@ -905,14 +1015,6 @@ textarea[name='message'] {
     cursor: pointer;
   }
 
-  .modal-text-container h2 {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 3rem;
-    font-size: 1.7rem;
-    color: #172b4d;
-  }
-
   .modal-tag {
     display: flex;
     gap: 1rem;
@@ -926,10 +1028,6 @@ textarea[name='message'] {
     color: #3c3a39;
   }
 
-  .modal-btn a {
-    color: white;
-  }
-
   .hide-modal {
     display: none;
   }
@@ -940,12 +1038,12 @@ textarea[name='message'] {
     gap: 1.4rem;
   }
 
-  /* .form-btn-container p {
-    display: none;
-  } */
-
   .form-btn-hide {
     display: none;
+  }
+
+  .temporary-grid-fix {
+    padding: 1rem;
   }
 }
 
@@ -1009,15 +1107,26 @@ textarea[name='message'] {
     font-size: 2.4rem;
   }
 
+  .modal-content p {
+    width: 391px;
+    font-size: 1.2rem;
+    color: #344563;
+  }
+
   #heading .intro p {
     font-size: 1.5rem;
   }
 
   .card-content-2 {
-    margin-top: 6.9rem;
+    padding-top: 5.4rem;
+    margin-top: 1.1rem;
   }
 
   #technologies .tech-wrapper {
     font-size: x-large;
+  }
+
+  .card-bg-3 {
+    padding-top: 4.3rem;
   }
 }

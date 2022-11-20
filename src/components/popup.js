@@ -1,7 +1,12 @@
 const root = document.querySelector('.modal-container');
+const sm = window.matchMedia('(min-width: 768px)');
 
 const modalData = [
-  {},
+  {
+    mobile: ` Multi Post Stories
+            <span class="bx bx-x"></span>
+    `,
+  },
   {
     desktop: './img/modal/deskModal.svg',
     title: `
@@ -43,12 +48,11 @@ const modalData = [
 ];
 
 function popup(
-  title = modalData[1].title,
   desktop = modalData[1].desktop,
   text = modalData[1].text,
   tag = modalData[1].tags,
   live = modalData[1].live,
-  source = modalData[1].source
+  source = modalData[1].source //eslint-disable-line
 ) {
   // CREATE
   const modalDiv = document.createElement('div');
@@ -59,9 +63,14 @@ function popup(
   textContainer.classList.add('modal-text-container');
   modalDiv.appendChild(textContainer);
 
+  // TITLE RESPONSIVENESS +++++++++++++++++++++++++
   const h2 = document.createElement('h2');
-  h2.innerHTML = title;
+
+  sm.matches // eslint-disable-line
+    ? (h2.innerHTML = modalData[1].title)
+    : (h2.innerHTML = modalData[0].mobile);
   textContainer.appendChild(h2);
+  // +++++++++++++++++++++++++++++++++++++++++++++++
 
   const ul = document.createElement('ul');
   ul.classList.add('modal-tag');
@@ -100,9 +109,17 @@ function popup(
   const modal = document.querySelector('.modal-container');
   const x = document.querySelector('.bx, .bx-x');
 
+  const overflow = document.querySelector('body');
+
+
+
   if (modal.classList.contains('hide-modal')) {
     btn.addEventListener('click', () => {
       modal.classList.remove('hide-modal');
+
+      overflow.style.overflow = 'hidden';
+
+
     });
   } else {
     btn.addEventListener('click', () => {
@@ -111,8 +128,23 @@ function popup(
   }
 
   x.addEventListener('click', () => {
+
+    modal.classList.toggle('hide-modal');
+    overflow.style.removeProperty('overflow');
+    overflow.style.overflowX = 'hidden';
+  });
+
+  // eslint-disable-next-line
+  const responsiveTitle = () =>
+    sm.matches // eslint-disable-line
+      ? (h2.innerHTML = modalData[1].title)
+      : (h2.innerHTML = modalData[0].mobile);
+
+  sm.addEventListener('change', responsiveTitle);
+
     modal.classList.add('hide-modal');
   });
+
 }
 
-export { popup };
+export { popup }; //eslint-disable-line

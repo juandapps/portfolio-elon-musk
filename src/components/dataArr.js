@@ -1,7 +1,7 @@
 const dataArr = [
   {
     card: '2',
-    title: `Data Dashboard <br/> Healthcare`,
+    title: 'Data Dashboard <br/> Healthcare',
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: 'card-bg-2',
@@ -22,7 +22,7 @@ const dataArr = [
   },
   {
     card: '3',
-    title: `Website Portfolio`,
+    title: 'Website Portfolio',
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: 'card-bg-3',
@@ -43,10 +43,10 @@ const dataArr = [
   },
   {
     card: '4',
-    title: `Professional Art <br/> Printing Data More`,
+    title: 'Professional Art <br/> Printing Data More',
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    image: 'card-bg-1',
+    image: 'card-bg-x',
     tags: `
                     <li class="tag-2">
                   <spa>css</spa>
@@ -64,7 +64,7 @@ const dataArr = [
   },
   {
     card: '5',
-    title: `Data Dashboard <br/> Healthcare`,
+    title: 'Data Dashboard <br/> Healthcare',
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: 'card-bg-2',
@@ -85,7 +85,7 @@ const dataArr = [
   },
   {
     card: '6',
-    title: `Website Portfolio`,
+    title: 'Website Portfolio',
     description:
       "A daily selction of preivately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: 'card-bg-3',
@@ -106,4 +106,4 @@ const dataArr = [
   },
 ];
 
-export { dataArr };
+export { dataArr }; //eslint-disable-line

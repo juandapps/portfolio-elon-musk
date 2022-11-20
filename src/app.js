@@ -5,6 +5,7 @@ import { dataArr } from './components/dataArr.js';
 import { createArr } from './components/card-2-6.js';
 import { popup } from './components/popup.js';
 import { validate } from './components/validate.js';
+import { localstorage } from './components/localstorage.js';
 
 toggleMenu();
 divider();
@@ -17,3 +18,4 @@ dataArr.forEach((e) => {
 
 popup();
 validate();
+localstorage();

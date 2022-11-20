@@ -108,12 +108,18 @@ function popup(
   const btn = document.querySelector('.modal-pointer');
   const modal = document.querySelector('.modal-container');
   const x = document.querySelector('.bx, .bx-x');
+
   const overflow = document.querySelector('body');
+
+
 
   if (modal.classList.contains('hide-modal')) {
     btn.addEventListener('click', () => {
       modal.classList.remove('hide-modal');
+
       overflow.style.overflow = 'hidden';
+
+
     });
   } else {
     btn.addEventListener('click', () => {
@@ -122,6 +128,7 @@ function popup(
   }
 
   x.addEventListener('click', () => {
+
     modal.classList.toggle('hide-modal');
     overflow.style.removeProperty('overflow');
     overflow.style.overflowX = 'hidden';
@@ -134,6 +141,10 @@ function popup(
       : (h2.innerHTML = modalData[0].mobile);
 
   sm.addEventListener('change', responsiveTitle);
+
+    modal.classList.add('hide-modal');
+  });
+
 }
 
 export { popup }; //eslint-disable-line

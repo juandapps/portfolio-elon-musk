@@ -106,6 +106,7 @@ function popup(
 
   // MODAL LOGIC
   const btn = document.querySelector('.modal-pointer');
+  const btn2 = document.querySelector('.modal-pointer-2');
   const modal = document.querySelector('.modal-container');
   const x = document.querySelector('.bx, .bx-x');
   const overflow = document.querySelector('body');
@@ -117,6 +118,17 @@ function popup(
     });
   } else {
     btn.addEventListener('click', () => {
+      modal.classList.add('hide-modal');
+    });
+  }
+
+  if (modal.classList.contains('hide-modal')) {
+    btn2.addEventListener('click', () => {
+      modal.classList.remove('hide-modal');
+      overflow.style.overflow = 'hidden';
+    });
+  } else {
+    btn2.addEventListener('click', () => {
       modal.classList.add('hide-modal');
     });
   }

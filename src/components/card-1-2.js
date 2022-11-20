@@ -119,7 +119,7 @@ function secondary(
   tag.classList.add('card-tag-3');
 
   card.appendChild(button);
-  button.classList.add('card-btn-2', 'card-btn-2-fix');
+  button.classList.add('card-btn-2', 'card-btn-2-fix', 'modal-pointer-2');
   button.setAttribute('type', 'submit');
 
   h2.innerHTML = title;

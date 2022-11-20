@@ -695,6 +695,10 @@ textarea[name='message'] {
     padding-right: 11px;
   }
 
+  .modal-btn a {
+    color: white;
+  }
+
   header .menu-link a {
     color: white;
   }
@@ -734,6 +738,14 @@ textarea[name='message'] {
 
   #heading .icons h1 {
     font-size: 5rem;
+  }
+
+  .modal-text-container h2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    font-size: 1.7rem;
+    color: #172b4d;
   }
 
   #contact h2 {
@@ -981,12 +993,6 @@ textarea[name='message'] {
     grid-area: 1 / span 3;
   }
 
-  .modal-content p {
-    width: 391px;
-    font-size: 1.2rem;
-    color: #344563;
-  }
-
   .modal-buttons-container {
     display: flex;
     padding-top: 7.3rem;
@@ -1009,14 +1015,6 @@ textarea[name='message'] {
     cursor: pointer;
   }
 
-  .modal-text-container h2 {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 3rem;
-    font-size: 1.7rem;
-    color: #172b4d;
-  }
-
   .modal-tag {
     display: flex;
     gap: 1rem;
@@ -1028,10 +1026,6 @@ textarea[name='message'] {
     border: solid 1.5px #979493;
     padding: 0.5rem;
     color: #3c3a39;
-  }
-
-  .modal-btn a {
-    color: white;
   }
 
   .hide-modal {
@@ -1111,6 +1105,12 @@ textarea[name='message'] {
 
   #heading h2 {
     font-size: 2.4rem;
+  }
+
+  .modal-content p {
+    width: 391px;
+    font-size: 1.2rem;
+    color: #344563;
   }
 
   #heading .intro p {

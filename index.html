@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"
+      integrity="sha512-cn16Qw8mzTBKpu08X0fwhTSv02kK/FojjNLz0bwp2xJ4H+yalwzXKFw/5cLzuBZCxGWIA+95X4skzvo8STNtSg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -26,15 +29,18 @@
           <h3>Elon Musk</h3>
         </div>
 
-        <ul class="menu">
+        <ul id="menu" class="menu">
           <li class="menu-link">
             <a href="#works">Portfolio</a>
+            <hr />
           </li>
           <li class="menu-link">
             <a href="#about">About</a>
+            <hr />
           </li>
           <li class="menu-link">
             <a href="#contact">Contact</a>
+            <hr />
           </li>
           <li class="contact-icon">
             <i class="fa-regular fa-envelope"></i>
@@ -42,7 +48,9 @@
         </ul>
 
         <button class="hamburger">
-          <i class="bx bx-menu"></i>
+          <span class="h-btn"></span>
+          <span class="h-btn"></span>
+          <span class="h-btn"></span>
         </button>
       </nav>
 
@@ -79,178 +87,10 @@
     </header>
 
     <!-- WORKS SECTION -->
-    <section id="works" class="card-wrapper">
-      <div class="divider">
-        <h2>My Recent Works</h2>
-        <hr />
-      </div>
-
-      <div class="card">
-        <div class="card-img">
-        <!-- MOBILE IMG -->
-        <img
-          src="img/mobile-version/works/multi-post-stories-1.svg"
-          alt="multi-post stories"
-          width="380"
-          height="380"
-          class="card-img"
-        />
-        <!-- DESKTOP IMG -->
-        <img
-          src="img/desktop-version/cards/multi-post.svg"
-          alt=""
-          class="desk-img"
-        />
-        <div class="card-content">
-          <div class="card-text">
-            <h2>Multi-Post Stories</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a standard
-              dummy text.
-            </p>
-          </div>
-          <ul class="badge">
-            <li><a href="#" class="card-badge">css</a></li>
-            <li><a href="#" class="card-badge">html</a></li>
-            <li><a href="#" class="card-badge">bootstrap</a></li>
-            <li><a href="#" class="card-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card-btn">See project</button>
-        </div>
-      </div>
-
-      <!-- GRID LAYOUT -->
-      <div class="grid-layout-wrapper">
-        <div class="card2 border grid-card-1">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <p class="hide-btn">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2 hide-btn">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn">See project</button>
-        </div>
-
-        <div class="card2 grid-card-2">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <h2 class="grid-card-title">
-              Data Dashboard <br />
-              Healthcare
-            </h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn hide-btn">See project</button>
-        </div>
-
-        <div class="card2 grid-card-3">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <h2 class="grid-card-title">Website Portfolio</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2 fix-badge">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn hide-btn">See project</button>
-        </div>
-
-        <div class="card2 grid-card-4">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <h2 class="grid-card-title">
-              Professional Art <br />
-              Printing Data More
-            </h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn hide-btn">See project</button>
-        </div>
-
-        <div class="card2 grid-card-2">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <h2 class="grid-card-title">
-              Data Dashboard <br />
-              Healthcare
-            </h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn hide-btn">See project</button>
-        </div>
-
-        <div class="card2 grid-card-3">
-          <div class="card2-text">
-            <h2 class="hide-btn">
-              Professional Art <br />
-              Printing Data
-            </h2>
-            <h2 class="grid-card-title">Website Portfolio</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-          </div>
-          <ul class="badge2 fix-badge">
-            <li><a href="#" class="card2-badge">html</a></li>
-            <li><a href="#" class="card2-badge">bootstrap</a></li>
-            <li><a href="#" class="card2-badge">Ruby</a></li>
-          </ul>
-          <button type="submit" class="card2-btn hide-btn">See project</button>
-        </div>
-      </div>
+    <section id="works">
+      <div class="divider"></div>
+      <div class="card-wrapper"></div>
+      <div class="modal-container hide-modal"></div>
     </section>
 
     <!-- ABOUT ME SECTION -->
@@ -265,8 +105,6 @@
         </p>
         <button type="submit" class="about-btn">Get My Resume</button>
       </div>
-      <!-- DESKTOP IMG -->
-      <img src="img/desktop-version/about-me.svg" class="desk-img" />
     </section>
 
     <!-- TECHNOLOGIES SECTION-->
@@ -342,7 +180,7 @@
       </h2>
       <form
         class="contact-me"
-        action="https://formspree.io/f/xoqbpleb"
+        action="https://formspree.io/f/mgeqqvbg"
         method="POST"
       >
         <!-- DESKTOP INPUTS -->
@@ -388,6 +226,7 @@
           name="email"
           id="email"
           placeholder="johndoe@gmail.com"
+          class="validate-email"
           required
         />
         <textarea
@@ -401,7 +240,10 @@
           spellcheck="true"
           required
         ></textarea>
-        <button type="submit" class="form-btn">Get in touch</button>
+        <div class="form-btn-container">
+          <button type="submit" class="form-btn">Get in touch</button>
+          <p class="x form-btn-hide">Please use lower case</p>
+        </div>
       </form>
     </section>
 
@@ -426,5 +268,6 @@
       </ul>
       <hr class="last-hr hide" />
     </footer>
+    <script src="./src/app.js" type="module"></script>
   </body>
 </html>

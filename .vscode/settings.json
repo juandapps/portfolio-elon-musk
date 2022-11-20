@@ -1,6 +1,4 @@
 {
-  "liveServer.settings.port": 5501,
-  "marquee.widgets.npm-stats.packageNames": [
-    "portfolio-elon-musk"
-  ]
+  "liveServer.settings.port": 5502,
+  "marquee.widgets.npm-stats.packageNames": ["portfolio-elon-musk"]
 }

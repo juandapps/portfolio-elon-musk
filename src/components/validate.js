@@ -8,7 +8,6 @@ function validate() {
     const mail = email.value;
     for (let i = 0; i < mail.length; i += 1) {
       if (capLetters.includes(mail[i])) {
-        console.log('wedwe');
         errorMessage.classList.remove('form-btn-hide');
         a.preventDefault();
         break;
@@ -19,4 +18,4 @@ function validate() {
   });
 }
 
-export { validate };
+export { validate }; //eslint-disable-line

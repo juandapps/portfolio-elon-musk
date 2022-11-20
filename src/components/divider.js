@@ -8,4 +8,4 @@ function divider() {
   section.appendChild(hr);
 }
 
-export { divider };
+export { divider }; //eslint-disable-line

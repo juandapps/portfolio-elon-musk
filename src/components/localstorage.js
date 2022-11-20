@@ -6,7 +6,7 @@ const textarea = document.querySelector('#message');
 
 function localstorage() {
   form.addEventListener('input', () => {
-    let obj = {
+    const obj = {
       name: names.value,
       lastName: lastName.value,
       email: email.value,
@@ -17,14 +17,14 @@ function localstorage() {
   });
 
   const recoverData = localStorage.getItem('store');
-  let obj = JSON.parse(recoverData);
-  console.log( obj.textarea)
-  if(obj != null){
-    names.value = obj.name
-    lastName.value = obj.lastName
-    email.value = obj.email
-    textarea.value = obj.textarea
+  const obj = JSON.parse(recoverData);
+
+  if (obj != null) {
+    names.value = obj.name;
+    lastName.value = obj.lastName;
+    email.value = obj.email;
+    textarea.value = obj.textarea;
   }
 }
 
-export { localstorage };
+export { localstorage }; //eslint-disable-line

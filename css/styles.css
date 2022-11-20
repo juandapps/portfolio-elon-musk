@@ -388,7 +388,7 @@ textarea[name='message'] {
   margin-top: 0.5rem;
 }
 
-/* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* CARDS PRE-SM +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .card-wrapper {
   display: flex;
@@ -432,7 +432,7 @@ textarea[name='message'] {
   padding: 0.5rem;
 }
 
-/* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* SECOND CARD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .card-text {
   padding-top: 7rem;
   width: 87%;
@@ -455,7 +455,7 @@ textarea[name='message'] {
   color: white;
 }
 
-/* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* CARD UTILITY CLASSES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .card-bg-mobile {
   background: url(/img/print-mobile.svg);
@@ -480,7 +480,7 @@ textarea[name='message'] {
   color: white;
 }
 
-/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CARD-2-DESKTOP*/
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CARD-2-DESKTOP */
 
 .card-container-2 {
   display: flex;
@@ -878,17 +878,20 @@ textarea[name='message'] {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .card-bg-2 {
     background: url(/img/desktop-version/grid/grid-card-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .card-bg-3 {
     background: url(/img/desktop-version/grid/grid-card-3.svg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 3rem;
   }
+
   .card-bg-4 {
     background: url(/img/desktop-version/grid/grid-card-4.svg);
     background-repeat: no-repeat;

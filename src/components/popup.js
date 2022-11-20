@@ -52,7 +52,7 @@ function popup(
   text = modalData[1].text,
   tag = modalData[1].tags,
   live = modalData[1].live,
-  source = modalData[1].source
+  source = modalData[1].source //eslint-disable-line
 ) {
   // CREATE
   const modalDiv = document.createElement('div');
@@ -65,7 +65,8 @@ function popup(
 
   // TITLE RESPONSIVENESS +++++++++++++++++++++++++
   const h2 = document.createElement('h2');
-  sm.matches
+
+  sm.matches // eslint-disable-line
     ? (h2.innerHTML = modalData[1].title)
     : (h2.innerHTML = modalData[0].mobile);
   textContainer.appendChild(h2);
@@ -126,11 +127,13 @@ function popup(
     overflow.style.overflowX = 'hidden';
   });
 
+  // eslint-disable-next-line
   const responsiveTitle = () =>
-    sm.matches
+    sm.matches // eslint-disable-line
       ? (h2.innerHTML = modalData[1].title)
       : (h2.innerHTML = modalData[0].mobile);
+
   sm.addEventListener('change', responsiveTitle);
 }
 
-export { popup };
+export { popup }; //eslint-disable-line

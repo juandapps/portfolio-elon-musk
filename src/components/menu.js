@@ -33,4 +33,4 @@ function toggleMenu() {
   });
 }
 
-export { toggleMenu };
+export { toggleMenu }; //eslint-disable-line

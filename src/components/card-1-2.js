@@ -24,7 +24,7 @@ const primaryData = [
   },
   {
     card: '1',
-    title: `Professional Art <br /> Printing Data`,
+    title: 'Professional Art <br /> Printing Data',
     description:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     image: 'card-bg-1',
@@ -49,10 +49,9 @@ function primary(
   title = primaryData[0].title,
   description = primaryData[0].description,
   image = primaryData[0].image,
-  tags = primaryData[0].tags
+  tags = primaryData[0].tags //eslint-disable-line
 ) {
   const container = document.createElement('div');
-  container;
   container.classList.add('card-container', 'grid-span');
 
   const img = document.createElement('img');
@@ -92,7 +91,7 @@ function secondary(
   title = primaryData[1].title,
   description = primaryData[1].description,
   image = primaryData[1].image,
-  tags = primaryData[1].tags
+  tags = primaryData[1].tags //eslint-disable-line
 ) {
   const container = document.createElement('div');
   const card = document.createElement('div');
@@ -128,4 +127,4 @@ function secondary(
   button.innerHTML = 'See Project';
 }
 
-export { primary, secondary };
+export { primary, secondary }; //eslint-disable-line

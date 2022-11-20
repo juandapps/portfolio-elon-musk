@@ -180,7 +180,7 @@
       </h2>
       <form
         class="contact-me"
-        action="https://formspree.io/f/xoqbpleb"
+        action="https://formspree.io/f/mgeqqvbg"
         method="POST"
       >
         <!-- DESKTOP INPUTS -->
@@ -226,6 +226,7 @@
           name="email"
           id="email"
           placeholder="johndoe@gmail.com"
+          class="validate-email"
           required
         />
         <textarea
@@ -239,7 +240,10 @@
           spellcheck="true"
           required
         ></textarea>
-        <button type="submit" class="form-btn">Get in touch</button>
+        <div class="form-btn-container">
+          <button type="submit" class="form-btn">Get in touch</button>
+          <p class="x form-btn-hide">Please use lower case</p>
+        </div>
       </form>
     </section>
 

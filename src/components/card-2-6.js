@@ -33,4 +33,4 @@ function createArr(title, description, image, tags) {
   button.setAttribute('type', 'submit');
 }
 
-export { createArr };
+export { createArr }; //eslint-disable-line
